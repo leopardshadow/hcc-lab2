@@ -7,18 +7,18 @@ class RosExerciseNode(object):
     def __init__(self):
         self.node_name = "ROS_Exercise_Node"
 
-        # Write Publishers
-        self.pub_image_info_string_reply = rospy.Publisher("~image_info_string_reply", String, queue_size=1)
+        # Write Publishers, please fill in" XXX"
+        self.pub_image_info_string_reply = rospy.Publisher("XXX", "XXX", queue_size=1)
         # Write Subscribers
-        self.sub_image_info_string = rospy.Subscriber("~image_info_string", String, self.cbString, queue_size=1)
+        self.sub_image_info_string = rospy.Subscriber("XXX", "XXX", "XXX", queue_size=1)
        
         rospy.loginfo("Initialized %s." %(self.node_name))
 
     def cbString(self,image_msg):
 	#Generate string messag
-	image_info_string =  "This is " + image_msg.data
+	image_info_string =  "This is " + "XXX"		#hint : "XXX" is the string message which is published by ros_example.py
 	#Publish string message
-	self.pub_image_info_string_reply.publish(image_info_string)
+	self."XXX"."XXX"("XXX")
 	
 
 

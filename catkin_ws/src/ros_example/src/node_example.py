@@ -7,18 +7,17 @@ class RosExampleNode(object):
     def __init__(self):
         self.node_name = "ROS_Example_Node"
 
-        # Write Publishers
-        self.pub_image_info_string = rospy.Publisher("~image_info_string", String, queue_size=1)
-        # Write Subscribers
-        self.sub_image = rospy.Subscriber("/gcdog/camera_node/image/compressed", CompressedImage, self.cbImage, queue_size=1)
-       
+        # Write Publishers, please fill in XXX
+        self.pub_image_info_string = rospy.Publisher("image_info_string", String, queue_size=1)
+        # Write Subscribers, please fill in XXX
+        self.sub_image = rospy.Subscriber("XXX", CompressedImage, "XXX", queue_size=1)
         rospy.loginfo("Initialized %s." %(self.node_name))
 
     def cbImage(self,image_msg):
 	#Generate string message
 	image_info_string = "Blue yellow line"
-	#Publish string message
-	self.pub_image_info_string.publish(image_info_string)
+	#Publish string message, please fill in XXX
+	self.pub_image_info_string."XXX"("XXX")
 	
 
 

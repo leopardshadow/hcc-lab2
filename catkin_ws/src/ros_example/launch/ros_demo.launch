@@ -5,17 +5,17 @@
 	<arg name="pkg_name" value="ros_example"/>
 	<arg name="local" value="false"/>
 
-	<!-- Complete ros_example launch -->
-	<include file="$(find ros_example)/launch/ros_example.launch">
+	<!-- Complete ros_example launch, please fill in "XXX" -->
+	<include file="$(find "XXX")/"XXX"/"XXX".launch">
             <arg name="veh" value="$(arg veh)"/>
 	    <arg name="local" value="$(arg local)"/>
         </include>
                   
-	<!-- Complete ros topic remapping -->
-	<remap from="node_exercise/image_info_string" to="node_example/image_info_string"/>
+	<!-- Complete ros topic remapping, please fill in "XXX"-->
+	<remap from="node_exercise/"XXX"" to="node_example/"XXX""/>
         
-	<!-- Complete ros_exercise launch -->
-	<include file="$(find ros_example)/launch/ros_exercise.launch"> 
+	<!-- Complete ros_exercise launch, please fill in "XXX"-->
+	<include file="$(find "XXX")/"XXX"/"XXX".launch"> 
             <arg name="veh" value="$(arg veh)"/>
             <arg name="local" value="$(arg local)"/>
         </include>
