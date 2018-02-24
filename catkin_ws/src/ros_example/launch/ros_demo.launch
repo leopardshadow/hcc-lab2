@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launch>
+	<!-- start basic args -->
+	<arg name="veh" default="laptop"/>
+	<arg name="pkg_name" value="ros_example"/>
+	<arg name="local" value="false"/>
+
+	<!-- Complete ros_example launch -->
+	<include file="$(find ros_example)/launch/ros_example.launch">
+            <arg name="veh" value="$(arg veh)"/>
+	    <arg name="local" value="$(arg local)"/>
+        </include>
+                  
+	<!-- Complete ros topic remapping -->
+	<remap from="node_exercise/image_info_string" to="node_example/image_info_string"/>
+        
+	<!-- Complete ros_exercise launch -->
+	<include file="$(find ros_example)/launch/ros_exercise.launch"> 
+            <arg name="veh" value="$(arg veh)"/>
+            <arg name="local" value="$(arg local)"/>
+        </include>
+</launch>
+
