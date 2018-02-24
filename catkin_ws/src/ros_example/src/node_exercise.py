@@ -8,7 +8,7 @@ class RosExerciseNode(object):
         self.node_name = "ROS_Exercise_Node"
 
         # Write Publishers, please fill in" XXX"
-        self.pub_image_info_string_reply = rospy.Publisher("XXX", "XXX", queue_size=1)
+        self.pub_image_info_string_reply = rospy.Publisher("~image_info_string_reply", "XXX", queue_size=1)
         # Write Subscribers
         self.sub_image_info_string = rospy.Subscriber("XXX", "XXX", "XXX", queue_size=1)
        
