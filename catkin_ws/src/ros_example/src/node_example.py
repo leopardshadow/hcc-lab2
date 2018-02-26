@@ -8,7 +8,7 @@ class RosExampleNode(object):
         self.node_name = "ROS_Example_Node"
 
         # Write Publishers, please fill in XXX
-        self.pub_image_info_string = rospy.Publisher("image_info_string", String, queue_size=1)
+        self.pub_image_info_string = rospy.Publisher("~image_info_string", String, queue_size=1)
         # Write Subscribers, please fill in XXX
         self.sub_image = rospy.Subscriber("XXX", CompressedImage, "XXX", queue_size=1)
         rospy.loginfo("Initialized %s." %(self.node_name))
