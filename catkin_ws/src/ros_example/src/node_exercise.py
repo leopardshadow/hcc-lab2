@@ -14,7 +14,7 @@ class RosExerciseNode(object):
        
         rospy.loginfo("Initialized %s." %(self.node_name))
 
-    def cbString(self,image_msg):
+    def cbString(self,string_msg):
 	#Generate string messag
 	image_info_string =  "This is " + "XXX"		#hint : "XXX" is the string message which is published by ros_example.py
 	#Publish string message
