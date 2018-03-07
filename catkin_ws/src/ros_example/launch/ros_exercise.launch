@@ -7,9 +7,8 @@
 
     <group ns="$(arg veh)">
 	<!-- Please fill in XXX-->
-        <node unless="$(arg local)"  name="$(arg "XXX")" pkg="$(arg "XXX")"
-              type="$(arg "XXX").py" output="screen">
+        <node unless="$(arg local)"  name="$(arg node_name)" pkg="$(arg pkg_name)"
+              type="$(arg node_name).py" output="screen">
         </node>
     </group>
 </launch>
-
